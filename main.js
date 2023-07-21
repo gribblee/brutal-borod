@@ -357,7 +357,7 @@ MiniMap.prototype = {
   }
 };
 
-var miniMap = new MiniMap();
+// var miniMap = new MiniMap();
 
 var map = new RayMap({
   width: 22,
@@ -372,7 +372,7 @@ var map = new RayMap({
   wallTextures: [wallTex, wallCosmicTex, wallFireTex, wallPobedaText, wallCyberText, wallRisText, wallFirendText, wallWarText, wallEndTex],
 });
 
-miniMap.LoadMap(map);
+// miniMap.LoadMap(map);
 
 var camera = new RayCamera();
 
@@ -447,7 +447,7 @@ function UpdateRender(time) {
     ctx.save();
     ctx.translate(50, 100);
     ctx.rotate(-(player.direction - Math.PI * 0.5));
-    miniMap.RenderRelMap(ctx, mapPos, player.position);
+    // miniMap.RenderRelMap(ctx, mapPos, player.position);
     ctx.restore();
   }
   requestAnimationFrame(UpdateRender);
