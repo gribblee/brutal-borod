@@ -300,6 +300,18 @@ var wallEndTex = new Texture({
   height: 750
 })
 
+var wallPenTex = new Texture({
+  src: "/pen_borod.png",
+  width: 750,
+  height: 750
+})
+
+var wallKingTex = new Texture({
+  src: "/king_borod.png",
+  width: 750,
+  height: 750
+})
+
 
 function MiniMap(options) {
   this.target = undefined;
@@ -364,12 +376,12 @@ var map = new RayMap({
   height: 5,
   light: 5,
   walls: [
-    1, 1, 1, 1, 2, 1, 3, 1, 4, 1, 5, 1, 6, 1, 7, 1, 8, 1, 1, 1, 1, 1,
+    1, 1, 11, 10, 2, 1, 3, 1, 4, 1, 5, 1, 6, 1, 7, 1, 8, 1, 1, 1, 1, 1,
     1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1,
     1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 9, 1,
     1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1,
-    1, 1, 1, 1, 2, 1, 3, 1, 4, 1, 5, 1, 6, 1, 7, 1, 8, 1, 1, 1, 1, 1],
-  wallTextures: [wallTex, wallCosmicTex, wallFireTex, wallPobedaText, wallCyberText, wallRisText, wallFirendText, wallWarText, wallEndTex],
+    1, 1, 11, 10, 2, 1, 3, 1, 4, 1, 5, 1, 6, 1, 7, 1, 8, 1, 1, 1, 1, 1],
+  wallTextures: [wallTex, wallCosmicTex, wallFireTex, wallPobedaText, wallCyberText, wallRisText, wallFirendText, wallWarText, wallEndTex, wallPenTex, wallKingTex],
 });
 
 // miniMap.LoadMap(map);
